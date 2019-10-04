@@ -27,7 +27,7 @@ ul{
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  padding: 0;
+  padding: 3px;
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -37,4 +37,18 @@ ul{
 
 img{
   border: none;
+}
+
+#nav{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: space-between;
+}
+
+@media screen and (max-width:600px){
+  #nav{
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
