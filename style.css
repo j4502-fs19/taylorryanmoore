@@ -46,12 +46,33 @@ img{
   align-content: space-between;
 }
 
+.menu-trigger{
+  display: none;
+}
+
+
 @media screen and (max-width:600px){
   #nav{
     display: flex;
     flex-direction: column-reverse;
   }
-}
+
+
+  .menu-trigger {
+      order: 1;
+      font-size: 1.75em;
+      width: 2em;
+  }
+
+  .menu-trigger{
+    display: block;
+  }
+
+  #nav{
+    display: none;
+  }
+
+
 
 @media screen and (min-width: 1000px){
   .content{
@@ -62,4 +83,36 @@ img{
 
   }
 
+}
+
+.cards{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards li{
+  background-color: red;
+  border: 1px solid #ccc
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+}
+
+.menu-trigger{
+  order:1;
+}
+
+#nav{
+  order:2;
+}
+
+#nav ul{
+  display: none;
 }
