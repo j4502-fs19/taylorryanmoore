@@ -72,6 +72,12 @@ img{
     display: none;
   }
 
+  #examples{
+    display:flex;
+    
+  }
+}
+
 
 
 @media screen and (min-width: 1000px){
